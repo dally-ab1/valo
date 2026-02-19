@@ -48,21 +48,21 @@ const Services: React.FC = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="bg-[#17172A] p-10 tablet:p-12 rounded-[20px] border border-white/5 flex flex-col items-start text-left"
+                            className="group bg-[#17172A] p-10 tablet:p-12 rounded-[20px] border border-white/5 flex flex-col items-start text-left transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(14,159,110,0.1)] hover:border-[#0E9F6E]/30"
                         >
-                            <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-[#2D1B69] mb-10">
+                            <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-[#2D1B69] mb-10 transition-all duration-500 group-hover:bg-[#0E9F6E] group-hover:text-white group-hover:scale-110">
                                 {service.icon}
                             </div>
-                            <h3 className="text-2xl font-bold mb-6 text-white whitespace-nowrap">
+                            <h3 className="text-2xl font-bold mb-6 text-white whitespace-nowrap transition-colors duration-300 group-hover:text-[#0E9F6E]">
                                 {service.title}
                             </h3>
-                            <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-[280px]">
+                            <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-[280px] transition-colors duration-300 group-hover:text-white/60">
                                 {service.description}
                             </p>
                             <ul className="space-y-4">
                                 {service.items.map((item, idx) => (
-                                    <li key={idx} className="flex items-center gap-3 text-sm font-medium text-white/90">
-                                        <span className="w-1.5 h-1.5 bg-[#0E9F6E] rounded-full"></span>
+                                    <li key={idx} className="flex items-center gap-3 text-sm font-medium text-white/90 transition-transform duration-300 group-hover:translate-x-1">
+                                        <span className="w-1.5 h-1.5 bg-[#0E9F6E] rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(14,159,110,0.8)]"></span>
                                         {item}
                                     </li>
                                 ))}
