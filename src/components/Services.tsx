@@ -14,7 +14,6 @@ const services = [
         description: 'We build high-performance, scalable web applications using the latest technologies and modern frameworks.',
         items: [
             'UI/UX Design – Plan & Prototype',
-            'Tech Stack – Choose Tools & Frameworks',
             'Progressive Web App – Mobile & Desktop',
             'Animations & UI – Enhance Interaction'
         ],
