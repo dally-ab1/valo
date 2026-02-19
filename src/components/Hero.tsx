@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Hero: React.FC = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
     return (
-        <section className="container mx-auto section-padding min-h-[90vh] flex items-center">
+        <section className="container mx-auto section-padding min-h-[90vh] flex items-center relative">
+            {/* Mission Popup */}
+            {showPopup && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-sm animate-fade-in" onClick={() => setShowPopup(false)}>
+                    <div className="glass-card max-w-lg p-10 relative" onClick={(e) => e.stopPropagation()}>
+                        <button
+                            className="absolute top-4 right-4 text-white/40 hover:text-white transition-colors"
+                            onClick={() => setShowPopup(false)}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </button>
+                        <h3 className="text-accent-green font-bold text-sm tracking-widest uppercase mb-4">Why Valo?</h3>
+                        <p className="text-white text-xl leading-relaxed">
+                            We combine strategy, creativity, and technology to deliver high-impact solutions that convert visitors into loyal customers.
+                        </p>
+                    </div>
+                </div>
+            )}
+
             <div className="grid desktop:grid-cols-2 gap-12 desktop:gap-20 items-center w-full">
                 {/* Text Content */}
                 <div className="text-center desktop:text-left order-2 desktop:order-1">
@@ -12,16 +32,19 @@ const Hero: React.FC = () => {
                     <h1 className="mb-6 tracking-tight leading-tight">
                         Building Intelligent <span className="text-accent-green">Digital Experiences</span> for the Future
                     </h1>
-                    <p className="max-w-xl mx-auto desktop:mx-0 text-black/60 dark:text-white/60 mb-10 text-lg desktop:text-xl leading-relaxed">
+                    <p className="max-w-xl mx-auto desktop:mx-0 text-inherit opacity-70 mb-10 text-lg desktop:text-xl leading-relaxed">
                         We partner with ambitious tech agencies to create sleek, high-end digital products that feel intelligent, minimal, and premium.
                     </p>
                     <div className="flex flex-col tablet:flex-row items-center gap-4 justify-center desktop:justify-start">
                         <a href="#projects" className="pill-button-primary pill-button-glow w-full tablet:w-auto text-lg">
                             Explore Our Work
                         </a>
-                        <a href="#contact" className="pill-button-outline w-full tablet:w-auto text-lg">
-                            Start a Project
-                        </a>
+                        <button
+                            onClick={() => setShowPopup(true)}
+                            className="pill-button-outline w-full tablet:w-auto text-lg"
+                        >
+                            Why Us?
+                        </button>
                     </div>
                 </div>
 

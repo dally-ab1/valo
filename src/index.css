@@ -9,9 +9,11 @@
     --forest-green: #0E9F6E;
     --white: #FFFFFF;
 
-    /* User Requested Colors */
-    --font-light-mode: #72C274;
-    --font-dark-mode: #362062;
+    /* High Contrast Theme Colors */
+    --font-light-mode: #2D1B69;
+    /* Brand Indigo */
+    --font-dark-mode: #F6F4FF;
+    /* White/Lavender */
 
     font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
     scroll-behavior: smooth;
