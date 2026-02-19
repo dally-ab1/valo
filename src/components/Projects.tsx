@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
                     <span className="text-[#0E9F6E] font-extrabold text-xs tracking-[0.3em] uppercase block mb-4">
                         OUR PORTFOLIO
                     </span>
-                    <h2 className="text-5xl desktop:text-6xl font-black tracking-tight text-primary-indigo dark:text-white mb-6">
+                    <h2 className="text-3xl tablet:text-5xl desktop:text-6xl font-black tracking-tight text-primary-indigo dark:text-white mb-6">
                         Selected Works
                     </h2>
                 </div>
