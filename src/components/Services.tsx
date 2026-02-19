@@ -33,8 +33,11 @@ const services = [
 
 const Services: React.FC = () => {
     return (
-        <section id="services" className="premium-bg-dark transition-colors duration-300 section-padding font-sans">
-            <div className="max-w-[1440px] mx-auto px-5 tablet:px-10">
+        <section id="services" className="relative premium-bg-dark transition-colors duration-300 section-padding font-sans overflow-hidden">
+            {/* Subtle radial glow for depth */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(14,159,110,0.05)_0%,transparent_70%)] pointer-events-none" />
+
+            <div className="relative max-w-[1440px] mx-auto px-5 tablet:px-10">
                 <div className="text-center mb-16 desktop:mb-24">
                     <span className="text-gradient-green font-extrabold text-xs tracking-[0.3em] uppercase block mb-4">
                         WHAT WE DO
@@ -48,7 +51,7 @@ const Services: React.FC = () => {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group premium-card-gradient p-10 tablet:p-12 rounded-[20px] border border-white/5 flex flex-col items-start text-left transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(14,159,110,0.1)] hover:border-[#0E9F6E]/30"
+                            className="group glass-card p-10 tablet:p-12 flex flex-col items-start text-left"
                         >
                             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-[#2D1B69] mb-10 transition-all duration-500 group-hover:bg-[#0E9F6E] group-hover:text-white group-hover:scale-110">
                                 {service.icon}

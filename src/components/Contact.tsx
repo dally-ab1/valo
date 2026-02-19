@@ -4,7 +4,7 @@ const Contact: React.FC = () => {
     return (
         <section id="contact" className="section-padding">
             <div className="container mx-auto">
-                <div className="rounded-[40px] overflow-hidden grid desktop:grid-cols-2 bg-white dark:bg-dark-card card-shadow">
+                <div className="rounded-[40px] overflow-hidden grid desktop:grid-cols-2 glass-card">
                     {/* Indigo Info Block */}
                     <div className="bg-primary-indigo p-12 desktop:p-20 text-white flex flex-col justify-between">
                         <div>
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
                     </div>
 
                     {/* Form Block */}
-                    <div className="p-12 desktop:p-20 bg-white dark:bg-dark-card">
+                    <div className="p-12 desktop:p-20 bg-transparent">
                         <form className="space-y-8">
                             <div className="grid desktop:grid-cols-2 gap-8">
                                 <div className="relative">

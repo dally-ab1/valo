@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-[#0F0F1A]/80 backdrop-blur-md border-b border-black/5 dark:border-white/5 transition-colors duration-300">
+        <header className="fixed top-0 left-0 w-full z-50 glass-nav transition-colors duration-300">
             <div className="max-w-[1440px] mx-auto flex items-center justify-between h-20 desktop:h-24 px-5 tablet:px-10">
                 {/* Left Side: Logo */}
                 <div className="flex items-center">
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
 
                     <a
                         href="#contact"
-                        className="bg-[#0E9F6E] text-[#0F0F1A] hover:bg-[#0E9F6E]/90 px-6 py-2.5 rounded-lg font-bold text-xs tracking-widest uppercase transition-all hidden tablet:block"
+                        className="pill-button-primary px-6 py-2.5 rounded-lg font-bold text-xs tracking-widest uppercase transition-all hidden tablet:block"
                     >
                         LET'S TALK
                     </a>

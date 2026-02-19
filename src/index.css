@@ -22,7 +22,9 @@
   }
 
   .dark body {
-    @apply bg-[#0F0F1A] text-[var(--font-dark-mode)];
+    background: linear-gradient(135deg, #0F0F1A 0%, #1b113a 50%, #2D1B69 100%);
+    @apply text-[var(--font-dark-mode)];
+    background-attachment: fixed;
   }
 
   h1,
@@ -35,7 +37,7 @@
   }
 
   .dark {
-    @apply bg-[#0F0F1A] text-[var(--font-dark-mode)];
+    @apply text-[var(--font-dark-mode)];
   }
 }
 
@@ -44,28 +46,48 @@
     @apply rounded-full px-8 py-3 font-semibold transition-all duration-300 ease-in-out transform hover:-translate-y-1 active:scale-95;
   }
 
+  /* Glass CTA Button */
   .pill-button-primary {
-    @apply pill-button bg-primary-indigo text-white hover:shadow-lg;
+    @apply pill-button text-white relative overflow-hidden;
+    background: linear-gradient(135deg, #0E9F6E 0%, #72C274 100%);
+    box-shadow: 0 10px 30px -10px rgba(14, 159, 110, 0.5);
+  }
+
+  .pill-button-primary::after {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300 bg-white/20;
+  }
+
+  .pill-button-primary:hover {
+    @apply shadow-[0_20px_40px_-10px_rgba(14, 159, 110, 0.6)];
+  }
+
+  .pill-button-primary:hover::after {
+    @apply opacity-100;
   }
 
   .pill-button-outline {
     @apply pill-button border-2 border-primary-indigo text-primary-indigo hover:bg-primary-indigo hover:text-white;
   }
 
-  .dark .pill-button-primary {
-    @apply bg-accent-green text-white;
-  }
-
   .dark .pill-button-outline {
-    @apply border-white text-white hover:bg-white hover:text-dark-bg;
+    @apply border-white/20 text-white backdrop-blur-md bg-white/5 hover:bg-white hover:text-[#0F0F1A];
   }
 
   .section-padding {
     @apply py-20 desktop:py-[120px];
   }
 
-  .card-shadow {
-    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+  /* Glass Card Base */
+  .glass-card {
+    @apply backdrop-blur-[25px] border border-white/10 rounded-[24px] transition-all duration-500;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-card:hover {
+    @apply border-white/20;
+    background: rgba(255, 255, 255, 0.06);
   }
 }
 
@@ -104,15 +126,23 @@
 }
 
 @layer utilities {
-  .premium-bg-dark {
-    background: radial-gradient(circle at top center, #1b113a 0%, #0F0F1A 100%);
-  }
-
-  .premium-card-gradient {
-    background: linear-gradient(145deg, #1d1d36 0%, #17172A 100%);
+  .glass-nav {
+    @apply backdrop-blur-[20px] bg-[#0F0F1A]/60 border-b border-white/5;
   }
 
   .text-gradient-green {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0E9F6E] to-[#72C274];
+  }
+
+  .noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3 Vagabond %3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    z-index: 9999;
   }
 }

@@ -25,7 +25,9 @@ const projects = [
 
 const Projects: React.FC = () => {
     return (
-        <section id="projects" className="bg-white dark:bg-[#0F0F1A] transition-colors duration-300 section-padding">
+        <section id="projects" className="relative premium-bg-dark transition-colors duration-300 section-padding overflow-hidden">
+            {/* Subtle radial glow */}
+            <div className="absolute top-1/2 left-0 w-full h-full bg-[radial-gradient(circle_at_left,rgba(14,159,110,0.03)_0%,transparent_70%)] pointer-events-none" />
             <div className="max-w-[1440px] mx-auto px-5 tablet:px-10">
                 <div className="text-center mb-16 desktop:mb-24">
                     <span className="text-[#0E9F6E] font-extrabold text-xs tracking-[0.3em] uppercase block mb-4">
@@ -40,7 +42,7 @@ const Projects: React.FC = () => {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="bg-[#17172A] rounded-[20px] overflow-hidden border border-white/5 group cursor-pointer transition-all duration-500 hover:border-[#0E9F6E]/30"
+                            className="group glass-card overflow-hidden cursor-pointer"
                         >
                             <div className="aspect-[16/10] overflow-hidden">
                                 <img
