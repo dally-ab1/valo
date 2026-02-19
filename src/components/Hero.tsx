@@ -70,9 +70,9 @@ const Hero: React.FC = () => {
                 <div className="order-1 desktop:order-2 relative">
                     <div className="aspect-square desktop:aspect-[4/3] rounded-[30px] overflow-hidden glass-card relative z-10 animate-float">
                         <img
-                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
-                            alt="Digital Solution Dashboard"
-                            className="w-full h-full object-cover"
+                            src="/growth.jpg"
+                            alt="Growth Strategy Illustration"
+                            className="w-full h-full object-contain"
                         />
                         {/* Overlay Gradient */}
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary-indigo/20 to-transparent"></div>
