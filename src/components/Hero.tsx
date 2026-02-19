@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
 
                 {/* Image / Visual Container */}
                 <div className="order-1 desktop:order-2 relative">
-                    <div className="aspect-square desktop:aspect-[4/3] rounded-[30px] overflow-hidden card-shadow relative z-10 animate-float">
+                    <div className="aspect-square desktop:aspect-[4/3] rounded-[30px] overflow-hidden glass-card relative z-10 animate-float">
                         <img
                             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
                             alt="Digital Solution Dashboard"
@@ -38,8 +38,8 @@ const Hero: React.FC = () => {
                     </div>
 
                     {/* Background Decorative Shapes */}
-                    <div className="absolute -top-10 -right-10 w-64 h-64 bg-accent-green/20 rounded-full blur-3xl -z-0 opacity-50 desktop:opacity-100"></div>
-                    <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-primary-indigo/10 rounded-full blur-3xl -z-0 opacity-50 desktop:opacity-100"></div>
+                    <div className="absolute -top-10 -right-10 w-96 h-96 bg-accent-green/20 rounded-full blur-[100px] -z-0 opacity-50 desktop:opacity-70 animate-pulse"></div>
+                    <div className="absolute -bottom-10 -left-10 w-[400px] h-[400px] bg-primary-indigo/30 rounded-full blur-[120px] -z-0 opacity-50 desktop:opacity-60 animate-pulse" style={{ animationDelay: '1s' }}></div>
                 </div>
             </div>
         </section>

@@ -33,7 +33,8 @@ const Footer = () => (
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen">
+      <div className="min-h-screen relative">
+        <div className="noise-overlay" />
         <Header />
         <main>
           <Hero />
