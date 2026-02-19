@@ -20,7 +20,9 @@
   }
 
   body {
-    @apply bg-white text-[var(--font-light-mode)] transition-colors duration-300 overflow-x-hidden pt-16;
+    @apply transition-colors duration-300 overflow-x-hidden pt-16;
+    background-color: #F8F9FF;
+    color: var(--font-light-mode);
   }
 
   .dark body {
@@ -129,6 +131,15 @@
 }
 
 @layer utilities {
+  .bg-blob {
+    @apply absolute rounded-full filter blur-[100px] opacity-15 dark:opacity-25 animate-float pointer-events-none;
+    z-index: -1;
+  }
+
+  .dark .bg-blob {
+    @apply mix-blend-screen;
+  }
+
   .glass-nav {
     @apply backdrop-blur-[25px] border-b border-white/10;
     background: rgba(15, 15, 26, 0.15);

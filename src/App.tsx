@@ -33,7 +33,14 @@ const Footer = () => (
 function App() {
   return (
     <ThemeProvider>
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative overflow-hidden">
+        {/* Abstract Background Blobs */}
+        <div className="fixed inset-0 pointer-events-none -z-10">
+          <div className="bg-blob w-[500px] h-[500px] top-[-10%] left-[-10%] bg-accent-green" style={{ animationDelay: '0s' }} />
+          <div className="bg-blob w-[600px] h-[600px] bottom-[-15%] right-[-5%] bg-primary-indigo" style={{ animationDelay: '2s' }} />
+          <div className="bg-blob w-[400px] h-[400px] top-[40%] left-[60%] bg-accent-green/40" style={{ animationDelay: '4s' }} />
+        </div>
+
         <div className="noise-overlay" />
         <Header />
         <main>
