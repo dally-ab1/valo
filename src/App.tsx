@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import './App.css';
 
 const Footer = () => (
-  <footer className="bg-white dark:bg-dark-bg border-t border-black/5 dark:border-white/5 py-12 transition-colors duration-300">
+  <footer className="glass-card-panel border-t py-12 transition-colors duration-300">
     <div className="container mx-auto flex flex-col tablet:flex-row justify-between items-center gap-8">
       <div className="flex items-center">
         <img
