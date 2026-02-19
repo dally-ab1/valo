@@ -43,17 +43,17 @@ const Contact: React.FC = () => {
                         <form className="space-y-8">
                             <div className="grid desktop:grid-cols-2 gap-8">
                                 <div className="relative">
-                                    <input type="text" id="name" required placeholder=" " className="peer w-full border-b border-black/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
-                                    <label htmlFor="name" className="absolute left-0 top-4 text-black/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Full Name</label>
+                                    <input type="text" id="name" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
+                                    <label htmlFor="name" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Full Name</label>
                                 </div>
                                 <div className="relative">
-                                    <input type="email" id="email" required placeholder=" " className="peer w-full border-b border-black/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
-                                    <label htmlFor="email" className="absolute left-0 top-4 text-black/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Email Address</label>
+                                    <input type="email" id="email" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
+                                    <label htmlFor="email" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Email Address</label>
                                 </div>
                             </div>
 
                             <div className="relative">
-                                <select id="service" className="peer w-full border-b border-black/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg appearance-none">
+                                <select id="service" className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg appearance-none">
                                     <option value="" disabled selected>Select Service</option>
                                     <option value="brand">Brand Identity</option>
                                     <option value="web">Web Development</option>
@@ -65,8 +65,8 @@ const Contact: React.FC = () => {
                             </div>
 
                             <div className="relative">
-                                <textarea id="message" rows={4} placeholder=" " className="peer w-full border-b border-black/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg resize-none"></textarea>
-                                <label htmlFor="message" className="absolute left-0 top-4 text-black/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">About the project</label>
+                                <textarea id="message" rows={4} placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg resize-none"></textarea>
+                                <label htmlFor="message" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">About the project</label>
                             </div>
 
                             <button type="submit" className="pill-button-primary pill-button-glow w-full text-lg shadow-indigo-500/20 shadow-xl">
