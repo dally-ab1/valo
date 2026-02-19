@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
                         We partner with ambitious tech agencies to create sleek, high-end digital products that feel intelligent, minimal, and premium.
                     </p>
                     <div className="flex flex-col tablet:flex-row items-center gap-4 justify-center desktop:justify-start">
-                        <a href="#projects" className="pill-button-primary w-full tablet:w-auto text-lg">
+                        <a href="#projects" className="pill-button-primary pill-button-glow w-full tablet:w-auto text-lg">
                             Explore Our Work
                         </a>
                         <a href="#contact" className="pill-button-outline w-full tablet:w-auto text-lg">

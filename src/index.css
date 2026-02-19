@@ -81,13 +81,14 @@
   /* Glass Card Base */
   .glass-card {
     @apply backdrop-blur-[25px] border border-white/10 rounded-[24px] transition-all duration-500;
-    background: rgba(255, 255, 255, 0.03);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.2);
   }
 
   .glass-card:hover {
-    @apply border-white/20;
-    background: rgba(255, 255, 255, 0.06);
+    @apply border-white/20 -translate-y-1;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 50px 120px -30px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -127,7 +128,12 @@
 
 @layer utilities {
   .glass-nav {
-    @apply backdrop-blur-[20px] bg-[#0F0F1A]/60 border-b border-white/5;
+    @apply backdrop-blur-[25px] border-b border-white/10;
+    background: rgba(15, 15, 26, 0.15);
+  }
+
+  .pill-button-glow:hover {
+    box-shadow: 0 0 20px 2px rgba(114, 194, 116, 0.3);
   }
 
   .text-gradient-green {

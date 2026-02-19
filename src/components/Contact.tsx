@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
             <div className="container mx-auto">
                 <div className="rounded-[40px] overflow-hidden grid desktop:grid-cols-2 glass-card">
                     {/* Indigo Info Block */}
-                    <div className="bg-primary-indigo p-12 desktop:p-20 text-white flex flex-col justify-between">
+                    <div className="bg-primary-indigo/80 p-12 desktop:p-20 text-white flex flex-col justify-between backdrop-blur-md">
                         <div>
                             <h2 className="text-white text-4xl desktop:text-6xl mb-8">Ready to <span className="text-accent-green">Scale</span>?</h2>
                             <p className="text-white/70 text-lg mb-12 max-w-sm">
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                                 <label htmlFor="message" className="absolute left-0 top-4 text-black/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">About the project</label>
                             </div>
 
-                            <button type="submit" className="pill-button-primary w-full text-lg shadow-indigo-500/20 shadow-xl">
+                            <button type="submit" className="pill-button-primary pill-button-glow w-full text-lg shadow-indigo-500/20 shadow-xl">
                                 Send Message
                             </button>
                         </form>

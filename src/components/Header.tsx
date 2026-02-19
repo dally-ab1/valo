@@ -56,7 +56,7 @@ const Header: React.FC = () => {
 
                     <a
                         href="#contact"
-                        className="pill-button-primary px-6 py-2.5 rounded-lg font-bold text-xs tracking-widest uppercase transition-all hidden tablet:block"
+                        className="pill-button-primary pill-button-glow px-6 py-2.5 rounded-lg font-bold text-xs tracking-widest uppercase transition-all hidden tablet:block"
                     >
                         LET'S TALK
                     </a>
