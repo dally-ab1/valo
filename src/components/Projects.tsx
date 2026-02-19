@@ -19,7 +19,7 @@ const projects = [
     {
         title: 'Fluid Interfaces',
         category: 'UI/UX Design',
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200',
+        image: '/uiux.jpg',
     }
 ];
 
