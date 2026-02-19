@@ -55,9 +55,9 @@ const Contact: React.FC = () => {
                             <div className="relative">
                                 <select id="service" className="peer w-full border-b border-black/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg appearance-none">
                                     <option value="" disabled selected>Select Service</option>
-                                    <option value="strategy">Product Strategy</option>
-                                    <option value="uiux">UI/UX Design</option>
-                                    <option value="engineering">Engineering</option>
+                                    <option value="brand">Brand Identity</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="marketing">Digital Marketing</option>
                                 </select>
                                 <div className="absolute right-0 top-6 pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
