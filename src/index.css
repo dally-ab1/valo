@@ -21,7 +21,7 @@
 
   body {
     @apply transition-colors duration-300 overflow-x-hidden pt-16;
-    background-color: #F8F9FF;
+    background-color: #ECFDF5;
     color: var(--font-light-mode);
   }
 
@@ -110,7 +110,7 @@
   /* Project card lower glass panel */
   .glass-card-panel {
     backdrop-filter: blur(20px);
-    background: rgba(248, 249, 255, 0.85);
+    background: rgba(236, 253, 245, 0.85);
     border-top: 1px solid rgba(45, 27, 105, 0.1);
   }
 
