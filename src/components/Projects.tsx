@@ -9,7 +9,7 @@ const projects = [
     {
         title: 'Soul of Brand',
         category: 'Branding',
-        image: 'https://images.unsplash.com/photo-1518186239717-2e9b1132a900?auto=format&fit=crop&q=80&w=1200',
+        image: '/Branding.jpg',
     },
     {
         title: 'Growth Strategy',
