@@ -14,7 +14,7 @@ const projects = [
     {
         title: 'Growth Strategy',
         category: 'Growth',
-        image: '/growth.jpg',
+        image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200',
     },
     {
         title: 'Fluid Interfaces',
