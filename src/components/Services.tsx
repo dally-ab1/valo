@@ -3,6 +3,7 @@ import React from 'react';
 const services = [
     {
         title: 'Brand Identity',
+        description: 'We craft timeless identities that resonate with your target audience and stand out in crowded markets.',
         items: ['Logo Design', 'Brand Strategy', 'Visual Guidelines'],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" /></svg>
@@ -10,13 +11,20 @@ const services = [
     },
     {
         title: 'Web Development',
-        items: ['Modern Tech Stack', 'CMS Integration', 'E-Commerce Solutions'],
+        description: 'We build high-performance, scalable web applications using the latest technologies and modern frameworks.',
+        items: [
+            'UI/UX Design – Plan & Prototype',
+            'Tech Stack – Choose Tools & Frameworks',
+            'Progressive Web App – Mobile & Desktop',
+            'Animations & UI – Enhance Interaction'
+        ],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="20" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>
         )
     },
     {
         title: 'Growth Marketing',
+        description: 'We drive measurable growth through data-driven marketing strategies and advanced automation tools.',
         items: ['Performance Ads', 'SEO Optimization', 'Email Automation'],
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="m16 8-4 4-4-4" /><path d="m12 12v8" /></svg>
@@ -50,7 +58,7 @@ const Services: React.FC = () => {
                                 {service.title}
                             </h3>
                             <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-[280px]">
-                                We craft timeless identities that resonate with your target audience and stand out in crowded markets.
+                                {service.description}
                             </p>
                             <ul className="space-y-4">
                                 {service.items.map((item, idx) => (
