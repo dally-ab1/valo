@@ -51,10 +51,7 @@ const Projects: React.FC = () => {
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
                             </div>
-                            <div
-                                className="p-8 flex items-center justify-between border-t border-primary-indigo/10 dark:border-white/10"
-                                style={{ backdropFilter: 'blur(20px)', background: 'rgba(255,255,255,0.6)' }}
-                            >
+                            <div className="p-8 flex items-center justify-between glass-card-panel">
                                 <div>
                                     <span className="text-[#0E9F6E] font-bold text-xs tracking-widest uppercase mb-2 block font-sans">
                                         {project.category}
