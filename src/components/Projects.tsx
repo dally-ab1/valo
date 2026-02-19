@@ -4,7 +4,7 @@ const projects = [
     {
         title: 'Precision Systems',
         category: 'Development',
-        image: 'https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=1200',
+        image: '/ECommerce.jpg',
     },
     {
         title: 'Soul of Brand',
