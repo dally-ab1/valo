@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-indigo: #2D1B69;
+    --soft-lavender: #F6F4FF;
+    --forest-green: #0E9F6E;
+    --white: #FFFFFF;
+
+    /* User Requested Colors */
+    --font-light-mode: #72C274;
+    --font-dark-mode: #362062;
+
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-[var(--font-light-mode)] transition-colors duration-300 overflow-x-hidden pt-16;
+  }
+
+  .dark body {
+    @apply bg-[#0F0F1A] text-[var(--font-dark-mode)];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-inherit;
+  }
+
+  .dark {
+    @apply bg-[#0F0F1A] text-[var(--font-dark-mode)];
+  }
+}
+
+@layer components {
+  .pill-button {
+    @apply rounded-full px-8 py-3 font-semibold transition-all duration-300 ease-in-out transform hover:-translate-y-1 active:scale-95;
+  }
+
+  .pill-button-primary {
+    @apply pill-button bg-primary-indigo text-white hover:shadow-lg;
+  }
+
+  .pill-button-outline {
+    @apply pill-button border-2 border-primary-indigo text-primary-indigo hover:bg-primary-indigo hover:text-white;
+  }
+
+  .dark .pill-button-primary {
+    @apply bg-accent-green text-white;
+  }
+
+  .dark .pill-button-outline {
+    @apply border-white text-white hover:bg-white hover:text-dark-bg;
+  }
+
+  .section-padding {
+    @apply py-20 desktop:py-[120px];
+  }
+
+  .card-shadow {
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
