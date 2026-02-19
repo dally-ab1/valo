@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
                     <span className="text-[#0E9F6E] font-extrabold text-xs tracking-[0.3em] uppercase block mb-4">
                         OUR PORTFOLIO
                     </span>
-                    <h2 className="text-5xl desktop:text-6xl font-black tracking-tight text-white mb-6">
+                    <h2 className="text-5xl desktop:text-6xl font-black tracking-tight text-primary-indigo dark:text-white mb-6">
                         Selected Works
                     </h2>
                 </div>
@@ -56,11 +56,11 @@ const Projects: React.FC = () => {
                                     <span className="text-[#0E9F6E] font-bold text-xs tracking-widest uppercase mb-2 block font-sans">
                                         {project.category}
                                     </span>
-                                    <h3 className="text-white text-2xl font-bold tracking-tight">
+                                    <h3 className="text-primary-indigo dark:text-white text-2xl font-bold tracking-tight">
                                         {project.title}
                                     </h3>
                                 </div>
-                                <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-white transition-all group-hover:bg-[#0E9F6E] group-hover:text-[#0F0F1A] pill-button-glow">
+                                <div className="w-12 h-12 bg-white/10 dark:bg-white/5 rounded-full flex items-center justify-center text-primary-indigo dark:text-white transition-all group-hover:bg-accent-green group-hover:text-primary-indigo dark:group-hover:text-[#0F0F1A] pill-button-glow">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" /></svg>
                                 </div>
                             </div>

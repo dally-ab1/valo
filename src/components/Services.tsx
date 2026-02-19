@@ -42,7 +42,7 @@ const Services: React.FC = () => {
                     <span className="text-gradient-green font-extrabold text-xs tracking-[0.3em] uppercase block mb-4">
                         WHAT WE DO
                     </span>
-                    <h2 className="text-5xl desktop:text-6xl font-black tracking-tight text-white mb-6">
+                    <h2 className="text-5xl desktop:text-6xl font-black tracking-tight text-primary-indigo dark:text-white mb-6">
                         The Valo Method
                     </h2>
                 </div>
@@ -56,15 +56,15 @@ const Services: React.FC = () => {
                             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-[#2D1B69] mb-10 transition-all duration-500 group-hover:bg-[#0E9F6E] group-hover:text-white group-hover:scale-110">
                                 {service.icon}
                             </div>
-                            <h3 className="text-2xl font-bold mb-6 text-white whitespace-nowrap transition-colors duration-300 group-hover:text-[#0E9F6E]">
+                            <h3 className="text-2xl font-bold mb-6 text-primary-indigo dark:text-white whitespace-nowrap transition-colors duration-300 group-hover:text-accent-green">
                                 {service.title}
                             </h3>
-                            <p className="text-white/40 text-sm leading-relaxed mb-8 max-w-[280px] transition-colors duration-300 group-hover:text-white/60">
+                            <p className="text-primary-indigo/60 dark:text-white/40 text-sm leading-relaxed mb-8 max-w-[280px] transition-colors duration-300 group-hover:text-primary-indigo dark:group-hover:text-white/60">
                                 {service.description}
                             </p>
                             <ul className="space-y-4">
                                 {service.items.map((item, idx) => (
-                                    <li key={idx} className="flex items-center gap-3 text-sm font-medium text-white/90 transition-transform duration-300 group-hover:translate-x-1">
+                                    <li key={idx} className="flex items-center gap-3 text-sm font-medium text-primary-indigo/80 dark:text-white/90 transition-transform duration-300 group-hover:translate-x-1">
                                         <span className="w-1.5 h-1.5 bg-[#0E9F6E] rounded-full transition-all duration-300 group-hover:scale-150 group-hover:shadow-[0_0_8px_rgba(14,159,110,0.8)]"></span>
                                         {item}
                                     </li>

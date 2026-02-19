@@ -10,13 +10,13 @@ const Hero: React.FC = () => {
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-sm animate-fade-in" onClick={() => setShowPopup(false)}>
                     <div className="glass-card max-w-lg p-10 relative" onClick={(e) => e.stopPropagation()}>
                         <button
-                            className="absolute top-4 right-4 text-white/40 hover:text-white transition-colors"
+                            className="absolute top-4 right-4 text-primary-indigo/40 dark:text-white/40 hover:text-primary-indigo dark:hover:text-white transition-colors"
                             onClick={() => setShowPopup(false)}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
                         <h3 className="text-accent-green font-bold text-sm tracking-widest uppercase mb-4">Why Valo?</h3>
-                        <p className="text-white text-xl leading-relaxed">
+                        <p className="text-primary-indigo dark:text-white text-xl leading-relaxed">
                             We combine strategy, creativity, and technology to deliver high-impact solutions that convert visitors into loyal customers.
                         </p>
                     </div>
