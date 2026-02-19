@@ -3,15 +3,33 @@ import React, { useState } from 'react';
 const Hero: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false);
 
+    React.useEffect(() => {
+        const checkHash = () => {
+            if (window.location.hash === '#why-us') {
+                setShowPopup(true);
+            }
+        };
+        checkHash();
+        window.addEventListener('hashchange', checkHash);
+        return () => window.removeEventListener('hashchange', checkHash);
+    }, []);
+
+    const closePopup = () => {
+        setShowPopup(false);
+        if (window.location.hash === '#why-us') {
+            window.history.pushState('', document.title, window.location.pathname + window.location.search);
+        }
+    };
+
     return (
         <section className="container mx-auto section-padding min-h-[90vh] flex items-center relative">
             {/* Mission Popup */}
             {showPopup && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-sm animate-fade-in" onClick={() => setShowPopup(false)}>
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-sm animate-fade-in" onClick={closePopup}>
                     <div className="glass-card max-w-lg p-10 relative" onClick={(e) => e.stopPropagation()}>
                         <button
                             className="absolute top-4 right-4 text-primary-indigo/40 dark:text-white/40 hover:text-primary-indigo dark:hover:text-white transition-colors"
-                            onClick={() => setShowPopup(false)}
+                            onClick={closePopup}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
