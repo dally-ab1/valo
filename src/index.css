@@ -102,3 +102,17 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+@layer utilities {
+  .premium-bg-dark {
+    background: radial-gradient(circle at top center, #1b113a 0%, #0F0F1A 100%);
+  }
+
+  .premium-card-gradient {
+    background: linear-gradient(145deg, #1d1d36 0%, #17172A 100%);
+  }
+
+  .text-gradient-green {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0E9F6E] to-[#72C274];
+  }
+}
