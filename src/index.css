@@ -59,7 +59,7 @@
   }
 
   .pill-button-primary:hover {
-    @apply shadow-[0_20px_40px_-10px_rgba(14, 159, 110, 0.6)];
+    box-shadow: 0 20px 40px -10px rgba(14, 159, 110, 0.6);
   }
 
   .pill-button-primary:hover::after {
