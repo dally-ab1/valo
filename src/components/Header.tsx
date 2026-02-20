@@ -18,8 +18,8 @@ const Header: React.FC = () => {
                 {/* Left Side: Logo */}
                 <div className="flex items-center">
                     <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                        <div className="w-10 h-10 bg-[#2D1B69] rounded-lg flex items-center justify-center text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13 3L4 14H11V21L20 10H13V3Z" /></svg>
+                        <div className="w-10 h-10 flex items-center justify-center">
+                            <img src="/logo.png" alt="Valo Logo" className="w-full h-full object-contain" />
                         </div>
                         <span className="text-2xl font-black tracking-tighter text-[#2D1B69] dark:text-white font-sans uppercase">
                             VALO

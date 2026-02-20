@@ -6,10 +6,10 @@ const Contact: React.FC = () => {
             <div className="container mx-auto">
                 <div className="rounded-[40px] overflow-hidden grid desktop:grid-cols-2 glass-card">
                     {/* Indigo Info Block */}
-                    <div className="bg-primary-indigo/80 p-8 tablet:p-12 desktop:p-20 text-white flex flex-col justify-between backdrop-blur-md">
+                    <div className="bg-primary-indigo/80 p-6 tablet:p-12 desktop:p-20 text-white flex flex-col justify-between backdrop-blur-md">
                         <div>
-                            <h2 className="text-white text-2xl tablet:text-4xl desktop:text-6xl mb-6 tablet:mb-8">Ready to <span className="text-accent-green">Scale</span>?</h2>
-                            <p className="text-white/70 text-base tablet:text-lg mb-8 tablet:mb-12 max-w-sm">
+                            <h2 className="text-white text-2xl tablet:text-4xl desktop:text-6xl mb-4 tablet:mb-8">Ready to <span className="text-accent-green">Scale</span>?</h2>
+                            <p className="text-white/70 text-sm tablet:text-lg mb-8 tablet:mb-12 max-w-sm">
                                 Let's collaborate on your next digital breakthrough. Our team is ready to build your vision.
                             </p>
 
@@ -39,37 +39,37 @@ const Contact: React.FC = () => {
                     </div>
 
                     {/* Form Block */}
-                    <div className="p-8 tablet:p-12 desktop:p-20 bg-transparent">
-                        <form className="space-y-8">
-                            <div className="grid desktop:grid-cols-2 gap-8">
+                    <div className="p-6 tablet:p-12 desktop:p-20 bg-transparent">
+                        <form className="space-y-5 tablet:space-y-8">
+                            <div className="grid desktop:grid-cols-2 gap-5 tablet:gap-8">
                                 <div className="relative">
-                                    <input type="text" id="name" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
-                                    <label htmlFor="name" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Full Name</label>
+                                    <input type="text" id="name" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-3 tablet:py-4 focus:outline-none focus:border-accent-green transition-colors text-base tablet:text-lg" />
+                                    <label htmlFor="name" className="absolute left-0 top-3 tablet:top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Full Name</label>
                                 </div>
                                 <div className="relative">
-                                    <input type="email" id="email" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg" />
-                                    <label htmlFor="email" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Email Address</label>
+                                    <input type="email" id="email" required placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-3 tablet:py-4 focus:outline-none focus:border-accent-green transition-colors text-base tablet:text-lg" />
+                                    <label htmlFor="email" className="absolute left-0 top-3 tablet:top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">Email Address</label>
                                 </div>
                             </div>
 
                             <div className="relative">
-                                <select id="service" className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg appearance-none">
+                                <select id="service" className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-3 tablet:py-4 focus:outline-none focus:border-accent-green transition-colors text-base tablet:text-lg appearance-none">
                                     <option value="" disabled selected>Select Service</option>
                                     <option value="brand">Brand Identity</option>
                                     <option value="web">Web Development</option>
                                     <option value="marketing">Digital Marketing</option>
                                 </select>
-                                <div className="absolute right-0 top-6 pointer-events-none">
+                                <div className="absolute right-0 top-5 tablet:top-6 pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6" /></svg>
                                 </div>
                             </div>
 
                             <div className="relative">
-                                <textarea id="message" rows={4} placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-4 focus:outline-none focus:border-accent-green transition-colors text-lg resize-none"></textarea>
-                                <label htmlFor="message" className="absolute left-0 top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">About the project</label>
+                                <textarea id="message" rows={4} placeholder=" " className="peer w-full border-b border-primary-indigo/10 dark:border-white/10 bg-transparent py-3 tablet:py-4 focus:outline-none focus:border-accent-green transition-colors text-base tablet:text-lg resize-none"></textarea>
+                                <label htmlFor="message" className="absolute left-0 top-3 tablet:top-4 text-primary-indigo/40 dark:text-white/40 pointer-events-none transition-all peer-focus:-top-4 peer-focus:text-sm peer-focus:text-accent-green peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-sm">About the project</label>
                             </div>
 
-                            <button type="submit" className="pill-button-primary pill-button-glow w-full text-lg shadow-indigo-500/20 shadow-xl">
+                            <button type="submit" className="pill-button-primary pill-button-glow w-full text-base tablet:text-lg shadow-indigo-500/20 shadow-xl">
                                 Send Message
                             </button>
                         </form>
