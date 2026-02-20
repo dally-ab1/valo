@@ -41,25 +41,25 @@ const Hero: React.FC = () => {
                 </div>
             )}
 
-            <div className="grid desktop:grid-cols-2 gap-12 desktop:gap-20 items-center w-full">
+            <div className="grid desktop:grid-cols-2 gap-8 tablet:gap-12 desktop:gap-20 items-center w-full">
                 {/* Text Content */}
                 <div className="text-center desktop:text-left order-2 desktop:order-1">
-                    <div className="inline-block px-3 py-1 rounded-full bg-accent-green/10 text-accent-green font-bold text-xs mb-5 animate-fade-in">
+                    <div className="inline-block px-3 py-1 rounded-full bg-accent-green/10 text-accent-green font-bold text-[10px] tablet:text-xs mb-3 tablet:mb-5 animate-fade-in">
                         New Era of Digital Solutions
                     </div>
-                    <h1 className="mb-5 tracking-tight leading-tight text-3xl tablet:text-4xl desktop:text-5xl">
+                    <h1 className="mb-3 tablet:mb-5 tracking-tight leading-tight text-3xl tablet:text-4xl desktop:text-5xl">
                         Building Intelligent <span className="text-accent-green">Digital Experiences</span> for the Future
                     </h1>
-                    <p className="max-w-xl mx-auto desktop:mx-0 text-inherit opacity-70 mb-8 text-base tablet:text-lg desktop:text-xl leading-relaxed">
+                    <p className="max-w-xl mx-auto desktop:mx-0 text-inherit opacity-70 mb-6 tablet:mb-8 text-sm tablet:text-lg desktop:text-xl leading-relaxed">
                         We partner with ambitious tech agencies to create sleek, high-end digital products that feel intelligent, minimal, and premium.
                     </p>
                     <div className="flex flex-col tablet:flex-row items-center gap-3 justify-center desktop:justify-start">
-                        <a href="#projects" className="pill-button-primary pill-button-glow w-full tablet:w-auto text-base tablet:text-lg">
+                        <a href="#projects" className="pill-button-primary pill-button-glow w-full tablet:w-auto text-center text-sm tablet:text-lg flex justify-center items-center">
                             Explore Our Work
                         </a>
                         <button
                             onClick={() => setShowPopup(true)}
-                            className="pill-button-outline w-full tablet:w-auto text-base tablet:text-lg"
+                            className="pill-button-outline w-full tablet:w-auto text-center text-sm tablet:text-lg flex justify-center items-center"
                         >
                             Why Us?
                         </button>
@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Image / Visual Container */}
-                <div className="order-1 desktop:order-2 relative">
+                <div className="order-1 desktop:order-2 relative w-[60%] tablet:w-full mx-auto">
                     <div className="aspect-square desktop:aspect-[4/3] rounded-[30px] overflow-hidden glass-card relative z-10 animate-float">
                         <img
                             src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2426"
