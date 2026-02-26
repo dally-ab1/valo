@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
             <div className="container mx-auto">
                 <div className="rounded-[40px] overflow-hidden grid desktop:grid-cols-2 glass-card">
                     {/* Indigo Info Block */}
-                    <div className="bg-primary-indigo/80 p-6 tablet:p-12 desktop:p-20 text-white flex flex-col justify-between backdrop-blur-md">
+                    <div className="bg-primary-indigo/80 p-6 tablet:p-12 desktop:p-20 text-white flex flex-col justify-between backdrop-blur-[20px]">
                         <div>
                             <h2 className="text-white text-2xl tablet:text-4xl desktop:text-6xl mb-4 tablet:mb-8">Ready to <span className="text-accent-green">Scale</span>?</h2>
                             <p className="text-white/70 text-sm tablet:text-lg mb-8 tablet:mb-12 max-w-sm">

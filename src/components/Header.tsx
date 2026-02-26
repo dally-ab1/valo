@@ -18,7 +18,7 @@ const Header: React.FC = () => {
                 {/* Left Side: Logo */}
                 <div className="flex items-center">
                     <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                        <div className="w-10 h-10 flex items-center justify-center">
+                        <div className="w-14 h-14 flex items-center justify-center">
                             <img src="/logo.png" alt="Valo Logo" className="w-full h-full object-contain" />
                         </div>
                         <span className="text-2xl font-black tracking-tighter text-[#2D1B69] dark:text-white font-sans uppercase">
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Mobile Navigation */}
-            <div className={`fixed inset-0 top-[80px] bg-[#F6F4FF] dark:bg-[#0F0F1A] z-40 tablet:hidden transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed inset-0 top-[80px] bg-[#F6F4FF]/80 dark:bg-[#0F0F1A]/80 backdrop-blur-[20px] z-40 tablet:hidden transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <nav className="flex flex-col items-center gap-8 pt-12">
                     {navLinks.map((link) => (
                         <a
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                     <a
                         href="#contact"
                         onClick={() => setIsMenuOpen(false)}
-                        className="bg-[#0E9F6E] text-[#0F0F1A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase mt-4"
+                        className="bg-[#0E9F6E]/80 backdrop-blur-[20px] text-[#0F0F1A] px-10 py-4 rounded-lg font-bold text-sm tracking-widest uppercase mt-4"
                     >
                         LET'S TALK
                     </a>

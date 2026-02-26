@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         <section className="container mx-auto section-padding min-h-[90vh] flex items-center relative">
             {/* Mission Popup */}
             {showPopup && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-sm animate-fade-in" onClick={closePopup}>
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-[#0F0F1A]/40 backdrop-blur-[20px] animate-fade-in" onClick={closePopup}>
                     <div className="glass-card max-w-lg p-10 relative" onClick={(e) => e.stopPropagation()}>
                         <button
                             className="absolute top-4 right-4 text-primary-indigo/40 dark:text-white/40 hover:text-primary-indigo dark:hover:text-white transition-colors"
